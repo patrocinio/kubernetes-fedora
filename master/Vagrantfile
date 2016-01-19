@@ -1,0 +1,9 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "kubernetes-master"
+  config.vm.network "private_network", type: "dhcp"
+  config.vm.hostname = "kube-master"
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 1024
+    v.cpus = 2
+  end
+end

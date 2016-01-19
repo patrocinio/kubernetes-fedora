@@ -1,0 +1,8 @@
+[masters]
+kube-master
+
+[etcd]
+kube-master
+
+[nodes]
+kube-node
